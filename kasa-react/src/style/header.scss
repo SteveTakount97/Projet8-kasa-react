@@ -1,0 +1,19 @@
+
+header{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        height: 34px;
+        gap: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding-top: 30px;
+     }
+    .img-logo{
+        width: 200px;
+       
+    }
+}
