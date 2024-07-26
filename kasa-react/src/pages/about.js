@@ -7,7 +7,7 @@ import aboutBanner from '../asssets/banner2.png';
 
 const About = () => {
   return (
-    <div>
+    <div className='pagehome'>
       <Banner backgroundImage={aboutBanner} />
       {/* Autres contenus de la page À propos */}
     </div>

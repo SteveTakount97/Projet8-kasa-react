@@ -1,0 +1,35 @@
+
+figure{
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    gap: 100px;
+
+    .img-erreur{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; 
+    }
+
+    figcaption{
+        color: #FF6060;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 52px;
+    }
+}
+a{
+    color: black;
+}
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 100px;
+}

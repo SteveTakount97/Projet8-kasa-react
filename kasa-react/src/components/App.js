@@ -30,6 +30,7 @@ function Root () {
        <div className="container">
          <Outlet />
        </div>
+      
   </>
 }
 
