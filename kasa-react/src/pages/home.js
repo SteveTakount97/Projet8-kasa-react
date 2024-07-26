@@ -1,12 +1,16 @@
 // src/pages/Home.js
-import React from 'react';
+
 import homeBanner from '../asssets/banner1.png';
 import Banner from '../components/Banner'; // Importer le composant Banner
 import '../style/home.scss'
 
-
+import Card from '../components/cards';
+import data from '../data.json'
+import Footer from '../components/footer';
 
 const Home = () => {
+
+  const cardsToDisplay = data.slice(0, 6);
   return (
     <>
     <div className='pagehome'>
@@ -16,7 +20,12 @@ const Home = () => {
       </Banner>
       {/* Autres contenus de la page d'accueil */}
     </div>
-
+    <div className="cards-container">
+      {cardsToDisplay.map((item) => (
+        <Card key={item.id} title={item.title} cover={item.cover} />
+      ))}
+    </div>
+    <Footer />
     </>
   );
 };
