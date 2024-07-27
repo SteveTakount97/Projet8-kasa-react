@@ -2,7 +2,9 @@
 header{
         display: flex;
         justify-content: space-between;
-        margin: 20px;
+        margin: auto;
+        padding: 20px;
+        max-width: 1240px;
       ul {
         display: flex;
         justify-content: flex-end;
