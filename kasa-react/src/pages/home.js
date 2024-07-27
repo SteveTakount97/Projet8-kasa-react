@@ -22,7 +22,7 @@ const Home = () => {
     </div>
     <div className="cards-container">
       {cardsToDisplay.map((item) => (
-        <Card key={item.id} title={item.title} cover={item.cover} />
+        <Card key={item.id} title="Titre de la Location "  />
       ))}
     </div>
     <Footer />

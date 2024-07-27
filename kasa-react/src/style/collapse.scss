@@ -1,5 +1,6 @@
 .accordion-item {
-    background-color: rgb(250, 246, 246);
+    background-color: #F6F6F6;
+    
   
     .accordion-title {
       font-size: 1.2em;
@@ -8,8 +9,10 @@
       font-weight: 700;
       font-size: 24px;
       user-select: none;
-      padding: 10px;
+      padding: 20px 20px 0px 15px;
       background-color: #FF6060;
+      border-radius: 10px;
+      height: 45px;
       color: white;
       transition: background-color 0.3s ease;
   
@@ -26,11 +29,12 @@
     .accordion-content {
       max-height: 0;
       overflow: hidden;
+      font-family: "Montserrat";
       transition: max-height 0.3s ease, padding 0.3s ease;
   
       &.open {
         max-height: 200px; 
-        padding: 10px 0;
+        padding: 10px;
       }
     }
   }

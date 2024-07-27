@@ -3,6 +3,7 @@ import Home from '../pages/home';
 import About from '../pages/about';
 import Header from "./header";
 import Erreur404 from "../pages/erreur404";
+import '../style/App.scss'
 
 const router = createBrowserRouter ([
   {

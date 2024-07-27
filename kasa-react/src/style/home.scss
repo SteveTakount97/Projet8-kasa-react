@@ -1,3 +1,5 @@
+
+
 .pagehome{
     margin: auto;
     width: 100%;
@@ -7,11 +9,14 @@
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
+    border-radius: 25px;
+    background-color: #F6F6F6;
     margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     max-width: 1240px;
   }
   
@@ -21,17 +26,24 @@
     padding: 16px;
     width: 360px;
     height: 340px;
+    border-radius: 10px;
     text-align: center;
+    background-color: #FF6060;
   }
   
   .card-image {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+ 
   }
   
   .card-title {
     font-size: 1.2em;
     margin-top: 8px;
+    color: white;
+    position: relative;
+    top: 300px;
+    text-align: left;
   }
   
