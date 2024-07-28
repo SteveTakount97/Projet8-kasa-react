@@ -4,6 +4,7 @@ import About from '../pages/about';
 import Header from "./header";
 import Erreur404 from "../pages/erreur404";
 import '../style/App.scss'
+import Logement from "../pages/logement";
 
 const router = createBrowserRouter ([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter ([
         {
           path: '',
           element: <Home/>
+        },
+        {
+          path: '/logement/:id',
+          element: <Logement />
         }
 
     ]
