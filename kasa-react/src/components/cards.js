@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Card = ({ onClick }) => {
+const Card = ({ onClick}) => {
   return (
     
       <div className="card" onClick={onClick}>
