@@ -26,6 +26,11 @@ figure{
 }
 a{
     color: black;
+    text-decoration: none;
+
+    &:focus{
+        border-bottom: 1px solid black;
+    }
 }
 ul {
     list-style-type: none;
