@@ -5,6 +5,8 @@ import data from '../data.json';
 import arrowLeft from '../asssets/arrow_back.png';
 import arrowRight from '../asssets/arrow_forward.png';
 import Collapse from './collapse';
+import Host from '../asssets/Host.png';
+import Rate from '../asssets/Rate.png';
 
 const Modal = () => {
   const { id } = useParams();
@@ -54,9 +56,12 @@ const Modal = () => {
             </div>
           )}
         </div>
-        <h2>{logementDetails.title}</h2>
-        <p>{logementDetails.location}</p>
-    
+        <div className='titre'> 
+        <h2>{logementDetails.title}</h2><h2 className='name'>{logementDetails.host.name} <img src={Host} alt='host' className='host-img' /> </h2>
+        </div>
+        <div className='sous-titre'>
+           <p>{logementDetails.location}</p><figure><img src={Rate} alt='Rate' /> </figure>
+        </div>
         <div className="tags-container">
           {logementDetails.tags.map((tag, index) => (
             <span key={index} className="tag">{tag}</span>

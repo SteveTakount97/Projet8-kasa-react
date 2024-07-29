@@ -8,6 +8,7 @@
   margin: auto;
   height: 543px;
   margin-top: 20px;
+  padding-bottom: 15px;
 
   .cover{
   width: 100%;
@@ -64,6 +65,13 @@
     align-content: center;
   }
 }
+.titre{
+  display: flex;
+  justify-content: space-between;
+}
+.sous-titre{
+  @extend .titre;
+}
 h2{
   font-family: "Montserrat";
   font-size: 36px;
@@ -72,6 +80,14 @@ h2{
   text-align: left;
   color: #FF6060;
   margin: 0;
+
+}
+.name{
+  font-size: 18px;
+}
+.host-img{
+  float: right;
+  margin-left: 10px;
 }
 p{
   font-family: Montserrat;
