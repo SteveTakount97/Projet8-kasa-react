@@ -56,16 +56,24 @@ const Modal = () => {
             </div>
           )}
         </div>
-        <div className='titre'> 
-        <h2>{logementDetails.title}</h2><h2 className='name'>{logementDetails.host.name} <img src={Host} alt='host' className='host-img' /> </h2>
-        </div>
+        <div className='titre'>
+          <h2>{logementDetails.title}</h2>
+          <div className='host-container'>
+            <h2 className='name'>{logementDetails.host.name} <img src={Host} alt='host' className='host-img' /></h2>
+      
+          </div>
+          
+          <div className='rate' >
+          <img src={Rate} alt='Rate' className='rate' />
+          </div>
         <div className='sous-titre'>
-           <p>{logementDetails.location}</p><figure><img src={Rate} alt='Rate' /> </figure>
+          <p>{logementDetails.location}</p>
         </div>
         <div className="tags-container">
           {logementDetails.tags.map((tag, index) => (
             <span key={index} className="tag">{tag}</span>
           ))}
+        </div>
         </div>
       </div>
       <div className="details">

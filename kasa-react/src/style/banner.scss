@@ -35,10 +35,25 @@
   position: relative;
   margin: 0;
   padding: 10px;
-  width: 700px;
+  width: 100%;
   font-weight: 700;
   color: white;
   font-size: 3rem;
-  line-height: 69px;
   z-index: 9999;
+}
+@media screen and (max-width: 769px){
+  .banner{
+    height: 115px;
+    margin: 10px;
+    margin-left: 10px;
+     display: flex;
+     justify-content: center;
+     &::before{
+      height: 115px;
+     }
+  }
+  .banner  h1{
+    font-size: 2rem;
+    padding: 0;
+  }
 }
