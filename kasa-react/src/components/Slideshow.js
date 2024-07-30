@@ -64,7 +64,7 @@ const Modal = () => {
           </div>
           
           <div className='rate' >
-          <img src={Rate} alt='Rate' className='rate' />
+          <img src={Rate} alt='Rate' className='rate-img' />
           </div>
         <div className='sous-titre'>
           <p>{logementDetails.location}</p>

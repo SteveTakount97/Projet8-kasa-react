@@ -7,7 +7,7 @@
   width: 100%;
   margin: auto;
   height: 543px;
-  margin-top: 20px;
+  margin-top: 50px;
   padding-bottom: 15px;
   
 
@@ -66,13 +66,32 @@
   }
 }
 .titre{
-  position: relative;
  display: grid;
- grid-template-rows: 50px 70px;
- grid-template-columns: 74% 26%
+ grid-template-rows: 60px 50px 50px 50px;
+ grid-template-columns: 77% 23%;
+ align-items: center;
+
  
 }
+.sous-titre{
+  grid-column: 1;
+  grid-row: 2;
+  height: 50px;
+}
+.rate{
+  grid-column: 1;
+  grid-row: 3;
 
+}
+.tags-container{
+  grid-column: 1;
+  grid-row: 4;
+}
+.host-container{
+  display: flex;
+  justify-content:  right;
+  padding-top: 16px;
+}
 h2{
   font-family: "Montserrat";
   font-size: 36px;
@@ -85,6 +104,7 @@ h2{
 }
 .name{
   font-size: 18px;
+  width: 172px;
 }
 .host-img{
   float: right;
@@ -101,8 +121,7 @@ p{
 .logement-image{
   height: 415px;
   width: 100%;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
   object-fit: cover;
 }
 .details{
@@ -123,6 +142,9 @@ p{
 }
 
 @media screen and (max-width: 769px){
+  h2{
+    font-size: 2em;
+  }
   .logement-image{
     height: 300px;
     object-fit: cover;
@@ -146,15 +168,18 @@ p{
  }
  .titre{
   display: grid;
-  grid-template-columns: 70% 26%;
-  grid-template-rows: 50px 59px;
+  grid-template-columns: 68%;
+  align-items: center;
+  grid-template-rows: 50px 50px 50px;
  }
  .rate{
-  display: grid;
-  grid-row: 4;
+  margin-top: 10px;
+  grid-column: 1;
+
  }
  .host-container{
   display: grid;
+  justify-items: right;
   grid-column: 2;
   grid-row: 4;
  }
@@ -162,11 +187,19 @@ p{
   display: grid;
   grid-row: 2;
  }
+
 .titre {
   margin: auto;
   width: 90%;
 }
 .details{
   width: 90%;
+  gap: 10px;
+}
+.host-img{
+  float: right;
+}
+.name{
+  width: 172px;
 }
 }

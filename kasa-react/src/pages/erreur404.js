@@ -10,7 +10,7 @@ const Erreur404 = () => {
   return <>
    <Header />
    <div className={styles.container}>
-     <figure><img src = {erreur} alt='erreur 404' className={styles.img-erreur} /> </figure>
+     <figure><img src = {erreur} alt='erreur 404' className='img-erreur '/> </figure>
       <figcaption>Oups La page que vous demandez n'existe pas</figcaption>
    </div>
    <nav>

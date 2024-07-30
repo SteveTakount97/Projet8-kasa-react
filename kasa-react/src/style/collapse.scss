@@ -39,3 +39,9 @@
     }
   }
   
+  @media screen and (max-width: 769px){
+    .accordion-item .accordion-title{
+      height: 30px;
+      font-size: 1em;
+    }
+  }
