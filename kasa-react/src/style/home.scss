@@ -10,7 +10,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
     padding: 30px;
     border-radius: 25px;
     background-color: #F6F6F6;
@@ -19,46 +18,4 @@
     margin-bottom: 30px;
     max-width: 1200px;
   }
-  
-  .card {
-    border: 1px solid #ccc;
-    padding: 16px;
-    width: 25%;
-    height: 25vw;
-    border-radius: 10px;
-    text-align: center;
-    background-color: #FF6060;
-  }
-  
-  .card-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
- 
-  }
-  
-  .card-title {
-    font-size: 1.2em;
-    margin-top: 8px;
-    color: white;
-    position: relative;
-    top: 85%;
-    text-align: left;
-  }
-  
-  @media screen and (max-width: 769px) {
-    .cards-container{
-      display: flex;
-      flex-direction: column;
-      padding: 10px ;
-    }
-    .card{
-      width: 100%;
-      padding: 0;
-      height: 255px;
-    }
-    .card-title{
-      position: relative;
-      top: 70%;
-    }
-  }
+    

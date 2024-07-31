@@ -1,13 +1,14 @@
 import React from 'react';
+import '../style/card.scss';
 
-
-const Card = ({ onClick}) => {
+const Card = ({ id, title, image, onClick }) => {
   return (
-    
-      <div className="card" onClick={onClick}>
-        <h3 className="card-title">Titre <br/> de la location</h3>
+    <div className="card" onClick={onClick}>
+      <img src={image} alt={title} className="card-image" />
+      <div className="card-title">
+        <h3>{title}</h3>
       </div>
-  
+    </div>
   );
 };
 

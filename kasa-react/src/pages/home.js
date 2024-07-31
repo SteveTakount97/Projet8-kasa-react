@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import homeBanner from '../asssets/banner1.png';
 import Banner from '../components/Banner';
 import '../style/home.scss';
@@ -8,13 +8,21 @@ import Footer from '../components/footer';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-
   const navigate = useNavigate();
+
+  // State to hold the data
+  const [logements, setLogements] = useState([]);
+
+  // useEffect to load the data
+  useEffect(() => {
+    // Simulate data fetching
+    setLogements(data);
+  }, []); // Empty dependency array means this effect runs once after the initial render
+
   const handleCardClick = (id) => {
     navigate(`/logement/${id}`);
   };
 
-  const cardsToDisplay = data.slice(0, 6);
   return (
     <>
       <div className='pagehome'>
@@ -23,8 +31,14 @@ const Home = () => {
         </Banner>
       </div>
       <div className="cards-container">
-        {cardsToDisplay.map((item) => (
-          <Card key={item.id} id={item.id} onClick={() => handleCardClick(item.id)} />
+        {logements.map((item) => (
+          <Card 
+            key={item.id} 
+            id={item.id} 
+            title={item.title} // Assuming your Card component accepts a title prop
+            image={item.cover} // Assuming your Card component accepts an image prop
+            onClick={() => handleCardClick(item.id)} 
+          />
         ))}
       </div>
       <Footer />

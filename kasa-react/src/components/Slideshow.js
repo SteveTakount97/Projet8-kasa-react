@@ -5,7 +5,6 @@ import data from '../data.json';
 import arrowLeft from '../asssets/arrow_back.png';
 import arrowRight from '../asssets/arrow_forward.png';
 import Collapse from './collapse';
-import Host from '../asssets/Host.png';
 import Rate from '../asssets/Rate.png';
 
 const Modal = () => {
@@ -59,7 +58,7 @@ const Modal = () => {
         <div className='titre'>
           <h2>{logementDetails.title}</h2>
           <div className='host-container'>
-            <h2 className='name'>{logementDetails.host.name} <img src={Host} alt='host' className='host-img' /></h2>
+            <h2 className='name'>{logementDetails.host.name} <img src={logementDetails.host.picture} alt='host' className='host-img' /></h2>
       
           </div>
           

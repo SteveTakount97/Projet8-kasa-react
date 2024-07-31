@@ -1,0 +1,50 @@
+.card {
+    cursor: pointer;
+    border: 1px solid #FF6060;
+    background-color: #FF6060;
+    width: 27vw;
+    max-width: 370px;
+    height: 17vw;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    .card-image {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+      display: block;
+    }
+  
+    .card-title {
+      padding: 10px;
+      background-color: #FF6060;
+      text-align: center;
+  
+      h3 {
+        margin: 0;
+        font-size: 1em;
+        color: white;
+      }
+    }
+  }
+  
+
+  @media screen and (max-width: 769px) {
+    .cards-container{
+      display: flex;
+      flex-direction: column;
+      padding: 10px ;
+    }
+    .card{
+      width: 100%;
+      max-width: 94vw;
+      padding: 0;
+      height: 255px;
+    }
+  }
