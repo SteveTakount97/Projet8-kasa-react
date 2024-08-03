@@ -4,5 +4,7 @@
 @media screen and (max-width: 769px){
   .container{
    max-height: max-content;
+   display: flex;
+   flex-direction: column;
   }  
 }

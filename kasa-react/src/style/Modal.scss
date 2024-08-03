@@ -51,6 +51,8 @@
   display: flex;
   gap: 20px;
   grid-row: 3;
+  width: 80%;
+  
   .tag{
     background-color: #FF6060;
     color: white;
@@ -144,7 +146,7 @@ p{
 
 @media screen and (max-width: 769px){
   h2{
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .logement-image{
     height: 300px;
