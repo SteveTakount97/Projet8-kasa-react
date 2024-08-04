@@ -7,7 +7,6 @@
   width: 100%;
   margin: auto;
   height: 543px;
-  margin-top: 50px;
   padding-bottom: 15px;
   
 
@@ -50,8 +49,9 @@
 .tags-container{
   display: flex;
   gap: 20px;
-  grid-row: 3;
   width: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
   
   .tag{
     background-color: #FF6060;
@@ -67,33 +67,11 @@
     align-content: center;
   }
 }
+
 .titre{
- display: grid;
- grid-template-rows: 60px 50px 50px 50px;
- grid-template-columns: 77% 23%;
- align-items: center;
+  position: relative;
+}
 
- 
-}
-.sous-titre{
-  grid-column: 1;
-  grid-row: 2;
-  height: 50px;
-}
-.rate{
-  grid-column: 1;
-  grid-row: 3;
-
-}
-.tags-container{
-  grid-column: 1;
-  grid-row: 4;
-}
-.host-container{
-  display: flex;
-  justify-content:  right;
-  padding-top: 16px;
-}
 h2{
   font-family: "Montserrat";
   font-size: 36px;
@@ -104,13 +82,30 @@ h2{
   margin: 0;
 
 }
+h3{
+  margin: 0;
+}
+.host-container{
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.host-name {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5px;
+}
 .name{
   font-size: 18px;
-  width: 172px;
+
 }
 .host-img{
   float: right;
   width: 60px;
+  border-radius: 25px;
 }
 p{
   font-family: Montserrat;
@@ -124,7 +119,6 @@ p{
 .logement-image{
   height: 415px;
   width: 100%;
-  margin-top: 40px;
   object-fit: cover;
 }
 .details{

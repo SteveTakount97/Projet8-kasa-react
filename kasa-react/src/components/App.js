@@ -5,6 +5,7 @@ import Header from "./header";
 import Erreur404 from "../pages/erreur404";
 import '../style/App.scss'
 import Logement from "../pages/logement";
+import Footer from "./footer";
 
 const router = createBrowserRouter ([
   {
@@ -36,7 +37,7 @@ function Root () {
        <div className="container">
          <Outlet />
        </div>
-      
+       <Footer />
   </>
 }
 

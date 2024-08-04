@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/card.scss';
 
-const Card = ({ id, title, image, onClick }) => {
+const Card = ({title, image, onClick }) => {
   return (
     <div className="card" onClick={onClick}>
       <img src={image} alt={title} className="card-image" />

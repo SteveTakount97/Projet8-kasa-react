@@ -5,7 +5,6 @@ import Banner from '../components/Banner'; // Importer le composant Banner
 import aboutBanner from '../asssets/banner2.png';
 import data from '../aboutdata.json';
 import Collapse from '../components/collapse';
-import Footer from '../components/footer';
 import '../style/about.scss'
 
 const About = () => {
@@ -20,7 +19,6 @@ const About = () => {
         <Collapse key={index} title={item.title} content={item.content} />
       ))}
     </div>
-    <Footer />
     </>
   );
 };

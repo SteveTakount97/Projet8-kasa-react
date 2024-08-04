@@ -1,0 +1,18 @@
+.rating {
+    display: flex;
+    justify-content: end;
+  
+    .star {
+      font-size: 24px; // Taille des étoiles
+      margin-right: 4px; // Espacement entre les étoiles
+  
+      &.filled {
+        color: #FF6060; // Couleur des étoiles remplies
+      }
+  
+      &.empty {
+        color: lightgray; // Couleur des étoiles vides
+      }
+    }
+  }
+  

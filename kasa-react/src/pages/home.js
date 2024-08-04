@@ -4,7 +4,6 @@ import Banner from '../components/Banner';
 import '../style/home.scss';
 import Card from '../components/cards';
 import data from '../data.json';
-import Footer from '../components/footer';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -35,13 +34,13 @@ const Home = () => {
           <Card 
             key={item.id} 
             id={item.id} 
-            title={item.title} // Assuming your Card component accepts a title prop
-            image={item.cover} // Assuming your Card component accepts an image prop
+            title={item.title} 
+            image={item.cover} 
             onClick={() => handleCardClick(item.id)} 
           />
         ))}
       </div>
-      <Footer />
+   
     </>
   );
 };

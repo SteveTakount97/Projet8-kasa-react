@@ -13,6 +13,15 @@ header{
         list-style-type: none;
         margin: 0;
         padding-top: 30px;
+
+       li{
+         .inactive-link{
+           border-bottom: none;
+         }
+         .active-link{
+          border-bottom: 1px solid black;
+         }
+       }
      }
     .img-logo{
         width: 200px;
