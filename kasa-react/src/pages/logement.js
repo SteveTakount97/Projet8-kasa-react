@@ -23,13 +23,14 @@ const Logement = () => {
       <div className='logement-container'>
         <div><Carousel pictures={logementDetails.pictures}  /></div> 
         <div className='info'>
-        <div> <TitleAndHost title={logementDetails.title} location={logementDetails.location} host={logementDetails.host} /></div> 
+         <TitleAndHost title={logementDetails.title} location={logementDetails.location} host={logementDetails.host} />
         <div> <LocationAndRate  rating={logementDetails.rating}/></div> 
-        <div> <Tags tags={logementDetails.tags} /></div> 
+       <Tags tags={logementDetails.tags} />
         </div>
       </div>
+      <div>
       <Details description={logementDetails.description} equipments={logementDetails.equipments} />
-
+      </div>
     
     </>
   );

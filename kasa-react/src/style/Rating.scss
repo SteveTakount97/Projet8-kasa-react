@@ -1,6 +1,8 @@
 .rating {
     display: flex;
-    justify-content: end;
+    position: absolute;
+    right: 15px;
+    padding-top: 20px;
   
     .star {
       font-size: 24px; // Taille des étoiles
@@ -16,3 +18,11 @@
     }
   }
   
+
+  @media screen and (max-width: 769px){
+    .rating {
+      left: 15px;
+      bottom: -176px;
+      
+    }
+  }
