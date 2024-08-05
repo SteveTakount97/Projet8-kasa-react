@@ -10,7 +10,7 @@ import Details from '../components/Details';
 const Logement = () => {
   const { id } = useParams();
   const [logementDetails, setLogementDetails] = useState(null);
-  const [error, setError] = useState(null);
+
 
   useEffect(() => {
     const fetchLogement = async () => {
@@ -23,16 +23,13 @@ const Logement = () => {
         const logement = data.find(item => item.id === id);
         setLogementDetails(logement);
       } catch (error) {
-        setError(error.message);
+        throw new Error('Pas de data charger');
       }
     };
 
     fetchLogement();
   }, [id]);
 
-  if (error) {
-    return <div>Error: {error}</div>;
-  }
 
   if (!logementDetails) {
     return <div>Logement not found</div>;

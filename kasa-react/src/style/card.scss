@@ -2,7 +2,7 @@
     cursor: pointer;
     background-color: #FF6060;
     position: relative;
-    width: 30vw;
+    width: 29vw;
     max-width: 374px;
     height: 17vw;
     border-radius: 8px;
@@ -43,6 +43,7 @@
   .cards-container{
     display: grid;
     grid-template-columns: 50% 50%;
+    gap: 10px;
     margin: 0 15px;
   }
   }
