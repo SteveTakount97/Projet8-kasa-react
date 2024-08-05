@@ -20,6 +20,7 @@ const Logement = () => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
+        console.log('Data fetched:', data);
         const logement = data.find(item => item.id === id);
         setLogementDetails(logement);
       } catch (error) {
@@ -34,6 +35,8 @@ const Logement = () => {
   if (!logementDetails) {
     return <div>Logement not found</div>;
   }
+  // Convertir rating en nombre
+  const rating = Number(logementDetails.rating);
 
   return (
     <>
@@ -48,7 +51,7 @@ const Logement = () => {
             host={logementDetails?.host}
           />
           <div>
-            <LocationAndRate rating={logementDetails?.rating} />
+            <LocationAndRate rating={rating} />
           </div>
           <Tags tags={logementDetails?.tags} />
         </div>
