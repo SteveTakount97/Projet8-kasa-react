@@ -68,7 +68,13 @@
     text-wrap: nowrap;
   }
 }
-
+.li-equipement{
+  display: flex;
+}
+.equipement{
+  margin: 0;
+  padding: 0;
+}
 .titre{
   position: relative;
 }
