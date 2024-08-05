@@ -3,7 +3,6 @@ import homeBanner from '../asssets/banner1.png';
 import Banner from '../components/Banner';
 import '../style/home.scss';
 import Card from '../components/cards';
-import data from '../data.json';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -12,10 +11,25 @@ const Home = () => {
   // State to hold the data
   const [logements, setLogements] = useState([]);
 
+  // Function to fetch data
+  const fetchLogements = async () => {
+    try {
+      const response = await fetch('./data.json'); // Replace with your actual data source
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const data = await response.json();
+      setLogements(data);
+    
+    } catch (error) {
+    
+      throw new Error ('pas de data');
+    }
+  };
+
   // useEffect to load the data
   useEffect(() => {
-    // Simulate data fetching
-    setLogements(data);
+    fetchLogements();
   }, []); // Empty dependency array means this effect runs once after the initial render
 
   const handleCardClick = (id) => {
@@ -40,7 +54,6 @@ const Home = () => {
           />
         ))}
       </div>
-   
     </>
   );
 };
