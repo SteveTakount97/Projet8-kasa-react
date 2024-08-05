@@ -44,14 +44,13 @@
 }
 @media screen and (max-width: 769px){
   .banner{
-    height: 115px;
+    height: 130px;
     margin: 10px ;
     margin-left: 10px;
-    width: 96%;
      display: flex;
      justify-content: center;
      &::before{
-      height: 115px;
+      height: 130px;
      }
   }
   .banner  h1{

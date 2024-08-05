@@ -16,7 +16,7 @@ const About = () => {
     </div>
     <div className="accordion">
       {data.map((item, index) => (
-        <Collapse key={index} title={item.title} content={item.content} />
+        <Collapse key={index} title={item.title} content={item.content} className="barre-item"/>
       ))}
     </div>
     </>
