@@ -40,7 +40,7 @@ const Home = () => {
     <>
       <div className='pagehome'>
         <Banner backgroundImage={homeBanner}>
-          <h1>Chez vous, partout et ailleurs</h1>
+          <h1>Chez vous,<br className='aligne'></br> partout et ailleurs</h1>
         </Banner>
       </div>
       <div className="cards-container">

@@ -1,11 +1,11 @@
 .card {
     cursor: pointer;
-    background-color: #FF6060;
+    border: 2px solid #FF6060;
     position: relative;
     width: 29vw;
     max-width: 374px;
     height: 17vw;
-    border-radius: 8px;
+    border-radius: 15px;
     overflow: hidden;
     margin: 10px;
     transition: transform 0.2s ease-in-out;
@@ -22,7 +22,6 @@
     }
   
     .card-title {
-      background-color: #FF6060;
       position: absolute;
       bottom: 12px;
       padding: 10px;
