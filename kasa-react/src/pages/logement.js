@@ -6,6 +6,7 @@ import Tags from '../components/Tags';
 import TitleAndHost from '../components/hostdetail';
 import LocationAndRate from '../components/Rating';
 import Details from '../components/Details';
+import Erreur404 from './erreur404';
 
 const Logement = () => {
   const { id } = useParams();
@@ -33,7 +34,7 @@ const Logement = () => {
 
 
   if (!logementDetails) {
-    return <div>Logement not found</div>;
+    return <Erreur404 />;
   }
   // Convertir rating en nombre
   const rating = Number(logementDetails.rating);
