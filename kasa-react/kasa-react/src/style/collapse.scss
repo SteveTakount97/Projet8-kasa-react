@@ -1,0 +1,47 @@
+.accordion-item {
+    background-color: #F6F6F6;
+    
+  
+    .accordion-title {
+      font-size: 1.2em;
+      cursor: pointer;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 20px;
+      user-select: none;
+      padding: 10px 20px 0px 15px;
+      background-color: #FF6060;
+      border-radius: 10px;
+      height: 38px;
+      color: white;
+      transition: background-color 0.3s ease;
+  
+      .accordion-icon {
+        float: right;
+        transition: transform 0.3s ease;
+      }
+  
+      .rotate {
+        transform: rotate(-180deg);
+      }
+    }
+  
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      font-family: "Montserrat";
+      transition: max-height 0.3s ease, padding 0.3s ease;
+  
+      &.open {
+        max-height: 200px; 
+        padding: 10px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 769px){
+    .accordion-item .accordion-title{
+      height: 30px;
+      font-size: 1em;
+    }
+  }

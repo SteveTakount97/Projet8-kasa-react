@@ -1,0 +1,28 @@
+.rating {
+    display: flex;
+    position: absolute;
+    right: 15px;
+    padding-top: 20px;
+  
+    .star {
+      font-size: 24px; // Taille des étoiles
+      margin-right: 4px; // Espacement entre les étoiles
+  
+      &.filled {
+        color: #FF6060; // Couleur des étoiles remplies
+      }
+  
+      &.empty {
+        color: lightgray; // Couleur des étoiles vides
+      }
+    }
+  }
+  
+
+  @media screen and (max-width: 769px){
+    .rating {
+      left: 0;
+      bottom: -70px;
+      
+    }
+  }

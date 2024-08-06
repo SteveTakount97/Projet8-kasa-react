@@ -1,0 +1,40 @@
+
+header{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding: 20px;
+        max-width: 1240px;
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        height: 34px;
+        gap: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding-top: 30px;
+
+       li{
+         .inactive-link{
+           border-bottom: none;
+         }
+         .active-link{
+          border-bottom: 1px solid black;
+         }
+       }
+     }
+    .img-logo{
+        width: 200px;
+        object-fit: contain;
+       
+    }
+}
+@media screen and (max-width: 769px){
+  header{
+    .img-logo{
+      width: 27%;
+      
+    }
+  }
+
+}

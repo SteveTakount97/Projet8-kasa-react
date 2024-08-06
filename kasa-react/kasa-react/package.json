@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "kasa-react",
   "version": "0.1.0",
   "private": true,
@@ -37,10 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-=======
-  "dependencies": {
-    "react-modal": "^3.16.1",
-    "react-router-dom": "^6.25.1"
->>>>>>> 0c4bb3f75131e7520edc5a37a0bbdf1629db0356
   }
 }
