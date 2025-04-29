@@ -7,9 +7,9 @@ import emptyStar from '../asssets/star-inactive.png';
 const LocationAndRate = ({ rating }) => {
   const totalStars = 5; // Total number of stars
   //verifi si rating est un nombre fini, si c'est >=0 et...
-  const validRating = Number.isFinite(rating) && rating >= 0 && rating <= totalStars ? rating : 0; 
-  const filledStars = Math.round(validRating); // Number of filled stars based on the rating
-  const emptyStars = totalStars - filledStars; // Number of empty stars
+  const validRating = Number.isFinite(rating) && rating >= 0 && rating <= totalStars ? rating : 0; //condition qui verifi si la note rating se situe entre 0 et 5
+  const filledStars = Math.round(validRating); // pour obtenir un nombre entier d'étoiles remplies
+  const emptyStars = totalStars - filledStars; // calcul du nombre d'étoiles vides
 
     // Logs pour le débogage
     console.log('Valid Rating:', validRating);

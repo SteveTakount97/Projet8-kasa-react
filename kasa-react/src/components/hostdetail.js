@@ -13,7 +13,6 @@ const TitleAndHost = ({ title, host, location }) => {
         <span className="last-name">{lastName}</span>
       </div>
       <img src={host.picture} alt={`${firstName} ${lastName}`} className="host-img" />
-      
     </div>
     </div>
   );
