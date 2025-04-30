@@ -7,31 +7,33 @@ import '../style/App.scss'
 import Logement from "../pages/logement";
 import Footer from "./footer";
 
-const router = createBrowserRouter ([
-  {
-    path: '/',
-    element: <Root/>,
-    errorElement: <Erreur404/>,
-    children: [
-        {
-          path: 'about',
-          element: <About/>
-        },
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Root />,
+      errorElement: <Erreur404 />,
+      children: [
         {
           path: '',
-          element: <Home/>
+          element: <Home />
         },
         {
-          path: '/logement/:id',
+          path: 'about',
+          element: <About />
+        },
+        {
+          path: 'logement/:id',
           element: <Logement />
         }
-
-    ]
-  },
+      ]
+    }
+  ],
   {
-    basename: "/Projet8-kasa-react"
+    basename: "/Projet8-kasa-react" 
   }
-])
+);
+
 
 function Root () {
   return <>
