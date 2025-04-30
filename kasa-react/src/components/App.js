@@ -28,7 +28,9 @@ const router = createBrowserRouter ([
 
     ]
   },
-  
+  {
+    basename: "/Projet8-kasa-react"
+  }
 ])
 
 function Root () {
