@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Projet8-kasa-react/static/css/main.cbb0008e.css",
-    "main.js": "/Projet8-kasa-react/static/js/main.da202a92.js",
+    "main.js": "/Projet8-kasa-react/static/js/main.aaaafe4f.js",
     "static/js/453.3f86033b.chunk.js": "/Projet8-kasa-react/static/js/453.3f86033b.chunk.js",
     "static/media/banner2.png": "/Projet8-kasa-react/static/media/banner2.dc7a08e1faa2e14de0bd.png",
     "static/media/banner1.png": "/Projet8-kasa-react/static/media/banner1.1168be13650bb18b456e.png",
     "index.html": "/Projet8-kasa-react/index.html",
     "main.cbb0008e.css.map": "/Projet8-kasa-react/static/css/main.cbb0008e.css.map",
-    "main.da202a92.js.map": "/Projet8-kasa-react/static/js/main.da202a92.js.map",
+    "main.aaaafe4f.js.map": "/Projet8-kasa-react/static/js/main.aaaafe4f.js.map",
     "453.3f86033b.chunk.js.map": "/Projet8-kasa-react/static/js/453.3f86033b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cbb0008e.css",
-    "static/js/main.da202a92.js"
+    "static/js/main.aaaafe4f.js"
   ]
 }
