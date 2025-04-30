@@ -28,7 +28,7 @@ const router = createBrowserRouter ([
 
     ]
   },
- 
+  
 ])
 
 function Root () {

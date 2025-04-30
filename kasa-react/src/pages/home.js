@@ -14,7 +14,8 @@ const Home = () => {
   // Function to fetch data
   const fetchLogements = async () => {
     try {
-      const response = await fetch('./data.json'); // recup des données depuis le dossier public
+      const response = await fetch(`${process.env.PUBLIC_URL}/data.json`);
+      // recup des données depuis le dossier public
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

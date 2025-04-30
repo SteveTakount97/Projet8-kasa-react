@@ -6,8 +6,10 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode  basename="/Projet8-kasa-react">
-    <App />
+  <React.StrictMode>
+    <BrowserRouter basename="/Projet8-kasa-react"> 
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -16,7 +16,7 @@ const Logement = () => {
   useEffect(() => {
     const fetchLogement = async () => {
       try {
-        const response = await fetch('../data.json'); // recuperation depuis le dossier public
+        const response = await fetch(`${process.env.PUBLIC_URL}/data.json`); // recuperation depuis le dossier public
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
